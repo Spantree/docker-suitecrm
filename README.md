@@ -6,7 +6,7 @@ The [full Github project](https://github.com/Spantree/docker-suitecrm) defines a
 
 1. Install [Docker and Docker Compose](https://docs.docker.com/compose/install/)
 2. Run `docker-compose up` from the root of this project.
-3. Access `http://{docker_host}:2080` from your web browser to finish setting up SuiteCRM.
+3. Access `http://{docker_host}:8080` from your web browser to finish setting up SuiteCRM.
 
 ### Running with Docker Run
 
