@@ -1,9 +1,9 @@
 FROM php:5.6-apache
 
-# SugarCRM 7.16 MAX
-ENV DOWNLOAD_URL https://suitecrm.com/component/dropfiles/?task=frontfile.download&id=21
-ENV DOWNLOAD_FILE suitecrm-7.1.6-max.zip
-ENV EXTRACT_FOLDER suitecrm-7.1.6-max
+# SugarCRM 7.21 MAX
+ENV DOWNLOAD_URL https://suitecrm.com/component/dropfiles/?task=frontfile.download&id=35
+ENV DOWNLOAD_FILE suitecrm-7.2.1-max.zip
+ENV EXTRACT_FOLDER suitecrm-7.2.1-max
 ENV WWW_FOLDER /var/www/html
 ENV WWW_USER www-data
 ENV WWW_GROUP www-data
@@ -30,6 +30,7 @@ ADD envtemplate.py /usr/local/bin/envtemplate.py
 ADD init.sh /usr/local/bin/init.sh
 
 RUN chmod u+x /usr/local/bin/init.sh
+RUN chmod u+x /usr/local/bin/envtemplate.py
 
 ADD crons.conf /root/crons.conf
 RUN crontab /root/crons.conf

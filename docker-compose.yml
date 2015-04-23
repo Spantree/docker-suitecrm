@@ -1,7 +1,7 @@
 suitecrm:
-  build: 7.1.6
+  build: 7.2.1
   ports:
-    - "2080:80"
+    - "8080:80"
   links:
     - "db"
   environment:
@@ -10,13 +10,13 @@ suitecrm:
 dbdata:
   image: tianon/true
   volumes:
-    - /my/volume
+    - /var/lib/mysql
 db:
   image: mariadb
   volumes_from:
     - dbdata
   environment:
-    MYSQL_ROOT_PASSWORD: YZiT4p7BXUqpdgpc
+    MYSQL_ROOT_PASSWORD: EvXTC3R7Sef5aB725hKv
     MYSQL_DATABASE: suitecrm
     MYSQL_USER: suitecrm
-    MYSQL_PASSWORD: password
+    MYSQL_PASSWORD: B3fyAKRyFpaMR5vyPMJz
