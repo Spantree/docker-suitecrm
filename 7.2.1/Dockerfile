@@ -1,7 +1,7 @@
 FROM php:5.6-apache
 
 # SugarCRM 7.21 MAX
-ENV DOWNLOAD_URL https://suitecrm.com/component/dropfiles/?task=frontfile.download&id=35
+ENV DOWNLOAD_URL http://iweb.dl.sourceforge.net/project/suitecrm/suitecrm-7.2.1.zip
 ENV DOWNLOAD_FILE suitecrm-7.2.1-max.zip
 ENV EXTRACT_FOLDER suitecrm-7.2.1-max
 ENV WWW_FOLDER /var/www/html
@@ -37,3 +37,4 @@ RUN crontab /root/crons.conf
 
 EXPOSE 80
 ENTRYPOINT ["/usr/local/bin/init.sh"]
+
