@@ -12,9 +12,11 @@ dbdata:
   volumes:
     - /var/lib/mysql
 db:
-  image: mariadb
+  image: mysql:5.6
   volumes_from:
     - dbdata
+  ports:
+    - 3306:3306
   environment:
     MYSQL_ROOT_PASSWORD: EvXTC3R7Sef5aB725hKv
     MYSQL_DATABASE: suitecrm
