@@ -2,7 +2,7 @@
 
 ### Running with Docker Compose
 
-The [full Github project](https://github.com/Spantree/docker-suitecrm) defines a Docker Compose environment which runs SugarCRM in one container and a MySQL instance in another. To set up SuiteCRM using this approach, please do the following:
+The [full Github project](https://github.com/Spantree/docker-suitecrm) defines a Docker Compose environment which runs SuiteCRM in one container and a MySQL instance in another. To set up SuiteCRM using this approach, please do the following:
 
 1. Install [Docker and Docker Compose](https://docs.docker.com/compose/install/)
 2. Run `docker-compose up` from the root of this project.
