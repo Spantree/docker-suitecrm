@@ -1,5 +1,5 @@
 suitecrm:
-  build: 7.8.2
+  build: 7.9.6
   ports:
     - "8080:80"
   links:

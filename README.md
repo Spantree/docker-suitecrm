@@ -15,3 +15,7 @@ If you already have MySQL installed or want to use a platform service like Amazo
 1. Install [Docker](http://docs.docker.com/installation/)
 2. Run `docker run --name some-suitecrm -e DB_HOST_NAME=yourhostname -e DATABASE_NAME=yourdatabasename -e DB_USER_NAME=yourusername -e DB_PASSWORD=yourpassword -e DB_TYPE=mysql -e DB_TCP_PORT=3306 -e DB_MANAGER=MysqlManager -p 2080:80 -d spantree/suitecrm`
 3. Access `http://{docker_host}:2080` from your web browser to finish setting up SuiteCRM.
+
+### Debuging
+
+1. When you get : "Warning: sugar_file_put_contents_atomic() : fatal rename failure" look here : https://community.sugarcrm.com/thread/19749
