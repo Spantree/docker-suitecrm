@@ -12,7 +12,7 @@ dbdata:
   volumes:
     - /var/lib/mysql
 db:
-  image: mysql:5.6
+  image: mysql:5.7
   volumes_from:
     - dbdata
   ports:
